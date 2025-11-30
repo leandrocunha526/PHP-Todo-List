@@ -55,8 +55,8 @@ require __DIR__ . '/header.php';
 
     <div class="mb-3">
         <label class="form-label">Senha</label>
-        <input name="password" type="password" minlength="4" class="form-control" required>
-        <div class="invalid-feedback">A senha deve conter no mínimo 4 caracteres.</div>
+        <input name="password" type="password" minlength="6" class="form-control" required>
+        <div class="invalid-feedback">A senha deve conter no mínimo 6 caracteres.</div>
     </div>
 
     <button class="btn btn-primary w-100">Entrar</button>

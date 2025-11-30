@@ -26,14 +26,13 @@ NOTA: Vale lembrar que este projeto foi para relembrar os conceitos novos em PHP
   - Excluir
   - Listar com filtros
 - 🔍 Filtros por:
-  - Texto (título)
   - Prioridade
   - Status
   - Paginação
 - ⭐ Priorização de 1 a 5
 - ⏳ Datas formatadas
 - ⚠ Notificações com Bootstrap Toast e Flash Messages
-- 🌘 Tema escuro e claro com base na configuração do navegador
+- 🌘 Tema escuro com botão caso deseja trocar
 
 ---
 
