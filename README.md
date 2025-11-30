@@ -10,6 +10,12 @@ NOTA: Vale lembrar que este projeto foi para relembrar os conceitos novos em PHP
 
 ---
 
+## Captura de tela
+
+![captura de tela](.github/images/Captura%20de%20tela%20de%202025-11-30%2020-08-28.png)
+
+---
+
 ## 🚀 Funcionalidades
 
 - 👤 Login e registro com senha criptografada (`password_hash`)
@@ -27,6 +33,7 @@ NOTA: Vale lembrar que este projeto foi para relembrar os conceitos novos em PHP
 - ⭐ Priorização de 1 a 5
 - ⏳ Datas formatadas
 - ⚠ Notificações com Bootstrap Toast e Flash Messages
+- 🌘 Tema escuro e claro com base na configuração do navegador
 
 ---
 
