@@ -1,0 +1,149 @@
+/* =========================================================
+   🎨 TEMA PADRÃO (CLARO)
+   ========================================================= */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --card-bg: #f7f7f7;
+  --border-color: #ddd;
+  --toast-bg: #ffffff;
+  --toast-text: #222;
+}
+
+/* Transição suave entre temas */
+:root,
+body {
+  transition: background-color 220ms ease, color 220ms ease;
+}
+
+/* =========================================================
+   🌙 TEMA ESCURO (Sistema ou User Preference)
+   ========================================================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #e5e5e5;
+    --card-bg: #1f1f1f;
+    --border-color: #444;
+    --toast-bg: #1f1f1f;
+    --toast-text: #e5e5e5;
+  }
+}
+
+/* Forçar dark mode via botão */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ddd;
+  --card-bg: #1f1f1f;
+  --border-color: #444;
+  --toast-bg: #1f1f1f;
+  --toast-text: #e5e5e5;
+}
+
+/* =========================================================
+   🖼 APLICAÇÃO DAS VARIÁVEIS
+   ========================================================= */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Inputs e selects */
+.form-control,
+.form-select {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* Tabelas */
+.table {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+/* Toasters */
+.toast {
+  background-color: var(--toast-bg) !important;
+  color: var(--toast-text) !important;
+}
+
+/* Botões no modo dark */
+.btn-outline-dark {
+  border-color: var(--text-color);
+  color: var(--text-color);
+}
+
+/* Navbar no dark mode */
+body.dark .navbar {
+  background-color: #101010 !important;
+}
+
+/* =========================================================
+   📐 LAYOUT RESPONSIVO E CENTRALIZADO
+   ========================================================= */
+.main-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .main-wrapper {
+    max-width: 92%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .main-wrapper {
+    padding: 12px;
+  }
+
+  nav .btn,
+  nav .navbar-brand {
+    font-size: 14px;
+  }
+}
+
+#emptyToast {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+#emptyToast.show {
+  opacity: 1 !important;
+  visibility: visible;
+}
+
+/* =========================================================
+   ✨ ESTÉTICA OPCIONAL — CARD VISUAL NO CONTEÚDO
+   ========================================================= */
+.main-wrapper {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 28px;
+  margin-top: 18px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Pequena animação para elementos */
+.toast,
+.card,
+.table {
+  transition: background-color 220ms ease, color 220ms ease,
+    border-color 220ms ease;
+}
