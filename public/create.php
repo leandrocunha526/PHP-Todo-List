@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors[] = 'A prioridade deve estar entre 1 e 5.';
   }
 
-  if (!in_array($status, ['Pendente', 'Em progresso', 'Concluido'])) {
+  if (!in_array($status, ['Pendente', 'Em progresso', 'Concluído'])) {
     $errors[] = 'Status inválido.';
   }
 
@@ -90,7 +90,7 @@ require __DIR__ . '/header.php';
     <select name="status" class="form-select">
       <option value="Pendente">Pendente</option>
       <option value="Em progresso">Em progresso</option>
-      <option value="Concluido">Concluído</option>
+      <option value="Concluído">Concluído</option>
     </select>
   </div>
 

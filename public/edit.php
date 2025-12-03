@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $priority = (int) ($_POST['priority'] ?? 1);
         $status = $_POST['status'] ?? 'pendente';
 
-        $validStatus = ['pendente', 'em progresso', 'concluido'];
+        $validStatus = ['Pendente', 'Em progresso', 'Concluído'];
 
         // ---- SERVER SIDE VALIDATION ----
         if ($title === '' || strlen($title) < 3) {
@@ -82,9 +82,9 @@ require __DIR__ . '/header.php';
   <div class="mb-3">
     <label class="form-label">Status</label>
     <select name="status" class="form-select" required>
-      <option value="pendente" <?= $item['status'] == 'pendente' ? 'selected' : '' ?>>Pendente</option>
-      <option value="em progresso" <?= $item['status'] == 'em progresso' ? 'selected' : '' ?>>Em progresso</option>
-      <option value="concluido" <?= $item['status'] == 'concluido' ? 'selected' : '' ?>>Concluído</option>
+      <option value="Pendente" <?= $item['status'] == 'Pendente' ? 'selected' : '' ?>>Pendente</option>
+      <option value="Em progresso" <?= $item['status'] == 'Em progresso' ? 'selected' : '' ?>>Em progresso</option>
+      <option value="Concluído" <?= $item['status'] == 'Concluido' ? 'selected' : '' ?>>Concluído</option>
     </select>
     <div class="invalid-feedback">Selecione um status válido.</div>
   </div>

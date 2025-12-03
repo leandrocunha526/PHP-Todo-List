@@ -99,9 +99,9 @@ function sort_link($field, $label)
       <label class="form-label">Status</label>
       <select name="status" class="form-select">
         <option value="">Todos</option>
-        <option value="pendente" <?= $statusFilter === 'pendente' ? 'selected' : '' ?>>Pendente</option>
-        <option value="em progresso" <?= $statusFilter === 'em progresso' ? 'selected' : '' ?>>Em Progresso</option>
-        <option value="concluido" <?= $statusFilter === 'concluido' ? 'selected' : '' ?>>Concluído</option>
+        <option value="Pendente" <?= $statusFilter === 'Pendente' ? 'selected' : '' ?>>Pendente</option>
+        <option value="Em progresso" <?= $statusFilter === 'Em progresso' ? 'selected' : '' ?>>Em Progresso</option>
+        <option value="Concluído" <?= $statusFilter === 'Concluído' ? 'selected' : '' ?>>Concluído</option>
       </select>
     </div>
 
